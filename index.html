@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="BMI calculator" content="BMI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+
+  <body>
+    <main>
+      <div class="title">
+        <h1>CALCULADORA</h1>
+        <h1>DE IMC</h1>
+      </div>
+
+      <div class="calculator_container">
+        <div class="title_container">
+          <h2>CALCULE SEU IMC</h2>
+        </div>
+
+        <div class="genders">
+          <button class="male">
+            <i class="fa-solid fa-mars fa-sm"></i>
+          </button>
+          <button class="female">
+            <i class="fa-solid fa-venus fa-sm"></i>
+          </button>
+        </div>
+
+        <div class="person_height">
+          <span>ALTURA</span>
+          <div class="buttons_height">
+            <button class="button button_height_minus">
+              <i class="fa-solid fa-minus"></i>
+            </button>
+            <span id="height">125 cm</span>
+            <button class="button button_height_plus">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+          </div>
+          <input min="0" max="250" id="input_range_height" type="range" />
+        </div>
+
+        <div class="person_weight">
+          <span>PESO</span>
+          <div class="buttons_weight">
+            <button class="button button_weight_minus">
+              <i class="fa-solid fa-minus"></i>
+            </button>
+            <span id="weight">100 kg</span>
+            <button class="button button_weight_plus">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+          </div>
+          <input min="0" max="200" id="input_range_weight" type="range" />
+        </div>
+
+        <button class="button_calculate">CALCULAR</button>
+      </div>
+      <div class="result_container">
+        <div class="title_container">
+          <h2>RESULTADO</h2>
+        </div>
+
+        <div class="result_bmi">
+          <span class="result_numbers">23,88</span>
+          <div class="bar_color"></div>
+        </div>
+
+        <div class="results_table">
+          <div class="results_table_left">
+            <span class="results_table_color red">Magreza</span>
+            <span class="results_table_color yellow">Abaixo do peso</span>
+            <span class="results_table_color green">Peso ideal</span>
+            <span class="results_table_color yellow">Sobrepeso</span>
+            <span class="results_table_color red">Obesidade</span>
+          </div>
+          <div class="results_table_right">
+            <span class="results_table_color red">< 17</span>
+            <span class="results_table_color yellow">17 - 18.5</span>
+            <span class="results_table_color green">18.5 - 25</span>
+            <span class="results_table_color yellow">25 - 30</span>
+            <span class="results_table_color red">> 30</span>
+          </div>
+        </div>
+        <p>*Calculos validos apenas para pessoas adultas.</p>
+        <button class="button_come_back">VOLTAR</button>
+      </div>
+    </main>
+    <script
+      src="https://kit.fontawesome.com/ac3d23dd5a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js" type="text/javascript"></script>
+  </body>
+</html>
